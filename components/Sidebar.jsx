@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React from "react";
-import { RxSketchLogo, RxDashboard, RxPerson } from "react-icons/rx";
+import { RxSketchLogo, RxPerson } from "react-icons/rx";
 import { HiOutlineShoppingBag } from "react-icons/hi";
-import { FiSettings } from "react-icons/fi";
+
 
 const Sidebar = ({ children }) => {
   return (
@@ -14,11 +14,7 @@ const Sidebar = ({ children }) => {
               <RxSketchLogo size={20} />
             </div>
           </Link>
-          <Link href="/">
-            <div className="bg-gray-100 hover:bg-gray-300 cursor-pointer my-4   p-3 rounded  ">
-              <RxDashboard size={20} />
-            </div>
-          </Link>
+
           <Link href="/customers">
             <div className="bg-gray-100  hover:bg-gray-300 cursor-pointer my-4  p-3 rounded  ">
               <RxPerson size={20} />
@@ -29,11 +25,7 @@ const Sidebar = ({ children }) => {
               <HiOutlineShoppingBag size={20} />
             </div>
           </Link>
-          <Link href="/">
-            <div className="bg-gray-100 hover:bg-gray-300 cursor-pointer my-4 p-3 rounded  ">
-              <FiSettings size={20} />
-            </div>
-          </Link>
+
         </div>
       </div>
       <main className="ml-20 w-full">{children}</main>

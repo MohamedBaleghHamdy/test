@@ -6,3 +6,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+@media(max-width:400px){
+   .media{
+display: inline;
+text-align: center;
+} 
+}

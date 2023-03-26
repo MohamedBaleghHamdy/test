@@ -15,7 +15,7 @@ export default function Home() {
       <main className="bg-gray-100 min-h-screen">
         <Header />
         <Topcarts />
-        <div className=" p-4 grid md:grid-cols-3 grid-cols-1 gap-4">
+        <div className=" p-4 grid md:grid-cols-3 grid-cols-1 gap-2">
           <Charts />
           <Orders />
         </div>
